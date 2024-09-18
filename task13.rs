@@ -5,13 +5,13 @@ use std::io::{self, BufRead};
 
 fn main() {
     let stdin = io::stdin();
-    let mut unique_words = Vec::new();
+    let mut unique = Vec::new();
 
     for line in stdin.lock().lines() {
         if let Ok(line) = line {
             for word in line.split_whitespace() {
-                if !unique_words.contains(&word.to_string()) {
-                    unique_words.push(word.to_string());
+                if !unique.contains(&word.to_string()) {
+                    unique.push(word.to_string());
                     print!("{} ", word);
                 }
             }
