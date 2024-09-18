@@ -7,12 +7,12 @@ fn main() {
     // Выполняем арифметические операции
     let sum = a + b;
     let difference = a - b;
-    let product = a * b;
-    let quotient = a / b;
+    let multiply = a * b;
+    let divide = a / b;
 
     // Выводим результаты
     println!("Складываем: {}", sum);
     println!("Вычитаем: {}", difference);
-    println!("Умножаем: {}", product);
-    println!("Делим: {}", quotient);
+    println!("Умножаем: {}", multiply);
+    println!("Делим: {}", divide);
 }
