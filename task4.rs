@@ -8,7 +8,7 @@ use std::time::Duration;
 
 fn main() -> io::Result<()> {
     print!("Введите количество воркеров: ");
-    io::stdout().flush()?; // Очищаем буфер
+    io::stdout().flush()?;
     let mut input = String::new();
     io::stdin().read_line(&mut input)?;
     let workers: usize = input.trim().parse().expect("Введите корректное число");
